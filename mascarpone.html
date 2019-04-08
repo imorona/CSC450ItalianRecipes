@@ -1,13 +1,10 @@
-<!-- TO DO
-  - all CSS <style=""> goes in style sheet!!!!
--->
-
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Italian Recipes </title>
+		<title>Italian Recipes</title>
 		<meta charset="utf-8"> <!--says set of character website going to use-->
-    	<!-- source of page background color: https://www.wikihow.com/Set-Background-Color-in-HTML -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- source viewport: https://www.w3schools.com/css/css_rwd_viewport.asp -->
 		<link rel="stylesheet" href="style.css">
 	</head>
 
@@ -17,22 +14,27 @@
 			<h3> with an Italian herself! </h3>
 		</header>
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- source of navigation bars with icons: https://www.w3schools.com/howto/howto_css_navbar_icon.asp !-->
 		<nav>
 	    	<ul>
-		        <li> <a href="index.html"> Home </a> </li>
-		        <li> <a href="mascarpone.html" id="homelink"> Recipe: Crema Mascarpone </a> </li>
-		        <li> <a href="salami.html"> Recipe: Chocolate Salami </a> </li>
-	      	</ul>
+		        <li> <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> </li>
+		        <li> <a href="mascarpone.html" id="mascarpone"> <i class="fa fa-cutlery"></i> Recipe: Crema Mascarpone </a> </li>
+		        <li> <a href="salami.html"> <i class="fa fa-cutlery"></i> Recipe: Chocolate Salami </a> </li>
+						<li> <a href="shopping.html"> <i class="fa fa-shopping-cart"></i> Shop </a> </li>
+	      </ul>
 		</nav>
 
 		<main>
 			<h2>CREMA MASCARPONE</h2>
-			<p> <strong>This cream is a traditional Italian dessert originating from the Veneto region.
+			<p> This cream is a traditional Italian dessert originating from the Veneto region.
 				Typically combined with Tiramisù, this cream can also be served on its own with some
-				cookies on the side. Enjoy! </strong> <br> <i> If you would like a video guide, <a href = "https://www.allrecipes.com/video/1375/tiramisu-ii/">here</a> it is. </i> </p>
+				cookies on the side. Enjoy! <br> <i> If you would like a video guide,
+					<a href = "https://www.allrecipes.com/video/1375/tiramisu-ii/">here</a> it is.</i>
+			</p>
 			<img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=930&q=80" height="300" alt="Ponte Rialto, Venice, Italy">
-			<img src="https://images.unsplash.com/photo-1542326213507-6d479d02d80b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" height="300" alt="Tiramisù">
-
+			<!-- <img src="https://images.unsplash.com/photo-1542326213507-6d479d02d80b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" height="300" alt="Tiramisù"> !-->
+			<img src="https://images.unsplash.com/photo-1542326237-94b1c5a538d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80" height="300" width="200" alt="Tiramisù">
 			<h3> Ingredients and Special Materials Needed </h3>
 			<table>
 				<tr>
@@ -48,13 +50,13 @@
 					<td>10 spoons</td>
 				</tr>
 				<tr>
-					<td>Electric mixer (click <a href = "https://www.amazon.com/slp/electric-mixer/acrqaecqhaz48ob">here</a> to buy it online)</td>
+					<td>Electric mixer (shop <a href = "shopping.html">here</a>)</td>
 					<td>N/A</td>
 				</tr>
 			</table>
 
 			<h3> Preparation Steps </h3>
-			<ol type="1"> <!-- ORDERED LIST -->
+			<ol>
 				<li>Separate the yolks from the egg whites. Place them in two separate bowls.</li>
 				<li>Use the mixer to mix the yolks and sugar. Stop when you get a creamy mix.</li>
 				<li>Add the mascarpone cheese and mix.</li>
@@ -63,7 +65,6 @@
 				<li>Store in the fridge for one hour.</li>
 				<li>Your mascarpone cream is now ready to serve. Enjoy!</li>
 			</ol>
-			<img src="https://images.unsplash.com/photo-1542326237-94b1c5a538d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80" width="200" alt="Tiramisù">
 		</main>
 
 		<footer>

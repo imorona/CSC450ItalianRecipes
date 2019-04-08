@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+@import 'https://fonts.googleapis.com/css?family=Petit+Formal+Script|Roboto';
 
 body {
   width: 90%;
@@ -20,11 +20,13 @@ a {
 }
 
 a:hover{
-  color: black;
+  color: pink;
 }
 
 header {
   text-align: center; /* Source: https://www.w3.org/Style/Examples/007/center.en.html */
+  font-family: 'Petit+Formal+Script', cursive;
+  font-size: 25px;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg); /* Source: https://www.w3schools.com/css/css_background.asp */
   background-position: center; /* Source: https://www.w3schools.com/cssref/pr_background-position.asp; */
   padding: 20px;
@@ -77,9 +79,9 @@ li a:hover:not(.active) {
 .active { /* let know which page on (shade of box) */
   background-color: #4CAF50;
 }
-
 /* END OF NAVIGATION */
 
+/* TABLE */
 table { /*https://www.w3schools.com/CSS/tryit.asp?filename=trycss_table_striped*/
   border-collapse: collapse;
   width: 50%;
@@ -95,6 +97,45 @@ th, td {/*https://www.w3schools.com/CSS/tryit.asp?filename=trycss_table_striped*
 tr:nth-child(even) {
   background-color: #ffffe6;
 }
+/* END OF TABLE */
+
+/* DROPDOWN BARS - Source: https://www.w3schools.com/howto/howto_js_accordion.asp */
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 17px;
+  border: 1px solid #D0D0D0;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+/* END of DROPDOWN BARS */
 
 footer {
   font-style: italic;
@@ -104,7 +145,7 @@ footer {
   margin: 10px auto;
 }
 
-#homelink {
+#home {
   color: red;
 }
 
@@ -116,6 +157,14 @@ footer {
   color: red;
 }
 
+#shop {
+  color: red;
+}
+
 .center{
   text-align: center;
+}
+
+.notbold{
+  font-weight:normal;
 }

@@ -1,13 +1,10 @@
-<!-- TO DO
-  - all CSS <style=""> goes in style sheet!!!!
--->
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<title> Italian Recipes </title>
 		<meta charset="utf-8"> <!--says set of character website going to use-->
-		<!-- source of page background color: https://www.wikihow.com/Set-Background-Color-in-HTML -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- source viewport: https://www.w3schools.com/css/css_rwd_viewport.asp -->
 		<link rel="stylesheet" href="style.css">
 	</head>
 
@@ -17,17 +14,23 @@
 		    <h3> with an Italian herself! </h3>
 		</header>
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- source of navigation bars with icons: https://www.w3schools.com/howto/howto_css_navbar_icon.asp !-->
 		<nav>
 	    	<ul>
-		        <li> <a href="index.html"> Home </a> </li>
-		        <li> <a href="mascarpone.html"> Recipe: Crema Mascarpone </a> </li>
-		        <li> <a href="salami.html" id="salami"> Recipe: Chocolate Salami </a> </li>
+		        <li> <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> </li>
+		        <li> <a href="mascarpone.html"> <i class="fa fa-cutlery"></i> Recipe: Crema Mascarpone </a> </li>
+		        <li> <a href="salami.html" id="salami"> <i class="fa fa-cutlery"></i> Recipe: Chocolate Salami </a> </li>
+						<li> <a href="shopping.html"> <i class="fa fa-shopping-cart"></i> Shop </a> </li>
 	      	</ul>
 	    </nav>
 
 		<main>
 			<h2>CHOCOLATE SALAMI</h2>
-			<p> This salami is a traditional Italian dessert originating from the Sicily region. It is called salami because of its resemblance to the typical Italian meat salami, do not worry - this is a dessert. You can serve it with coffee, milk, or even just my itself! <br> <i> If you would like a video guide, click <a href = "https://www.youtube.com/watch?v=mAm7EPriTX4">here</a>. </i> </p>
+			<p> This salami is a traditional Italian dessert originating from the Sicily region.
+				It is called salami because of its resemblance to the typical Italian meat salami, do not worry
+				 - this is a dessert. You can serve it with coffee, milk, or even just my itself! <br>
+				 <i> If you would like a video guide, click <a href = "https://www.youtube.com/watch?v=mAm7EPriTX4">here</a>. </i> </p>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Salame_de_chocolate_-_Chocolat_Salami.jpg" height="250" alt="Cut Chocolate Salami"> <!-- source: https://commons.wikimedia.org/wiki/File:Salame_de_chocolate_-_Chocolat_Salami.jpg -->
 
 			<h3> Ingredients and Special Materials Needed </h3>
@@ -53,13 +56,13 @@
 					<td>N/A</td>
 				</tr>
 				<tr>
-					<td>Electric mixer (click <a href = "https://www.amazon.com/slp/electric-mixer/acrqaecqhaz48ob">here</a> to buy it online)</td>
+					<td>Electric mixer (shop <a href = "shopping.html">here</a>)</td>
 					<td>N/A</td>
 				</tr>
 			</table>
 
 			<h3> Preparation Steps </h3>
-			<ol type="1"> <!-- ORDERED LIST -->
+			<ol> <!-- ORDERED LIST -->
 				<li>Mix the butter, eggs and sugar in a bowl.</li>
 				<li>Add the caco powder to the mix until you get a brown creamy mix.</li>
 				<li>Break the dry cookies.</li>
