@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Italian Recipes </title>
+		<meta charset="utf-8"> <!--says set of character website going to use-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- source viewport: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<h1> Learn To Make Italy's Most Precious Dessert </h1>
+			<h3> with an Italian herself! </h3>
+		</header>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- source of navigation bars with icons: https://www.w3schools.com/howto/howto_css_navbar_icon.asp !-->
+		<nav>
+	    	<ul>
+		        <li> <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> </li>
+		        <li> <a href="mascarpone.html"> <i class="fa fa-cutlery"></i> Recipe: Crema Mascarpone </a> </li>
+		        <li> <a href="salami.html"> <i class="fa fa-cutlery"></i> Recipe: Chocolate Salami </a> </li>
+            <li> <a href="shopping.html" id="shop"> <i class="fa fa-shopping-cart"></i> Shop </a> </li>
+	      	</ul>
+		</nav>
+
+		<main>
+			<h2>SHOPPING</h2>
+			<p> The tools that you need for these recipes right at your fingertips. Find the best deals! #ShoppingMadeEasy</p>
+
+      <h3>Electric Mixer</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Blue_KitchenAid.jpg" height="250" alt="Electric Mixer">
+
+      <!-- Source for accordion: https://www.w3schools.com/howto/howto_js_accordion.asp -->
+      <button class="accordion">Amazon</button>
+      <div class="panel">
+        <p> <span class='notbold'>Price: $299.00</span></p>
+        <p> <span class='notbold'>Rating: 4.6/5.0</span> </p>
+				<p><a href="https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-Pouring/dp/B00005UP2P">
+					<span class='notbold'>Buy </span></a></p>
+      </div>
+      <button class="accordion">Target</button>
+      <div class="panel">
+        <p> <span class='notbold'>Price: $199.99</span></p>
+        <p> <span class='notbold'>Rating: 5.0/5.0</span> </p>
+				<p><a href="https://www.target.com/p/kitchenaid-classic-plus-4-5qt-stand-mixer/-/A-14830664?preselect=14537847#lnk=sametab">
+          <span class='notbold'>Buy </span></a></p>
+      </div>
+
+      <h3>Cacao Decoration Set</h3>
+      <img src="https://images-na.ssl-images-amazon.com/images/I/41bld7qQRVL.jpg" height="250" alt="Caco Decoration Set">
+      <h3 style ="font-size: 10px"> <span class='notbold'> <i>
+        Source: https://www.amazon.com/Motta-Decoration-Cappuccinos-Lattes-Macchiato/dp/B004FE6CKY </i></span></h3>
+      <button class="accordion">Amazon</button>
+      <div class="panel">
+        <p> <span class='notbold'>Price: $19.02</span></p>
+        <p> <span class='notbold'>Rating: 4.2/5.0</span> </p>
+				<p><a href="https://www.amazon.com/Motta-Decoration-Cappuccinos-Lattes-Macchiato/dp/B004FE6CKY">
+          <span class='notbold'>Buy </span></a></p>
+      </div>
+      <button class="accordion">AliExpress</button>
+      <div class="panel">
+        <p> <span class='notbold'>Price: $63.50</span></p>
+        <p> <span class='notbold'>Rating: N/A</span> </p>
+				<p><a href="https://www.aliexpress.com/item/Cacao-Decoration-Set-for-Cappuccino-Lattes-steel-fancy-coffee-bepowder-cocoa-powder-Shaker-304-stainless-steel/32377585490.html">
+          <span class='notbold'>Buy </span></a></p>
+      </div>
+      <button class="accordion">DHgate</button>
+      <div class="panel">
+        <p> <span class='notbold'>Price: $20.81</span></p>
+        <p> <span class='notbold'>Rating: N/A</span> </p>
+				<p><a href="https://www.dhgate.com/product/motta-cacao-decoration-set-for-cappuccinos/173066011.html">
+          <span class='notbold'>Buy </span></a></p>
+      </div>
+		</main>
+
+    <!-- JavaScript-->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+		<footer>
+			<i>Made by Isabella Morona for CSC450 <br> Phillips Academy Andover</i> <!-- I found the italics tag in w3schools.com -->
+		</footer>
+
+	</body>
+</html>
